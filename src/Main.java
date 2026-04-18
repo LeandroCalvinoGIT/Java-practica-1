@@ -27,17 +27,29 @@ public class Main{
         String name = "Leandro";
         String food = "Fatays";
 
-        System.out.println("Me llamo " + name);
-        System.out.println("Me gustan las " + food);
-
         //Input
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingresa tu nombre: ");
         name = scanner.nextLine();
 
+        System.out.print("Ingresa tu edad: ");
+        age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Te llamas " + name + " y tenes " + age + " años.");
 
-        System.out.println(name);
+        // Calcular area de un rectangulo
+        System.out.println("Ingresa la medida de la base: ");
+        double b = scanner.nextDouble();
+        scanner.nextLine();
+
+        System.out.println("Ingresa la medida de la altura: ");
+        double h = scanner.nextDouble();
+        scanner.nextLine();
+
+        double area = b * h;
+        System.out.println("El área del rectángulo será: " + area);
+
 
         scanner.close();
     }
